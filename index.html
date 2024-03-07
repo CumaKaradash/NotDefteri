@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Not Defteri</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Not Defteri</h1>
+        <div id="notForm">
+            <textarea id="notTextarea" placeholder="Buraya notunuzu yazın..."></textarea>
+            <button onclick="kaydet()">Kaydet</button>
+        </div>
+        <div id="filtreleme">
+            <label for="etiket">Etiket:</label>
+            <select id="etiket">
+                <option value="">Tümü</option>
+                <option value="alışveriş">Alışveriş</option>
+                <option value="iş">İş</option>
+                <option value="kişisel">Kişisel</option>
+            </select>
+            <label for="siralama">Sırala:</label>
+            <select id="siralama">
+                <option value="tarih-azalan">Tarih (Azalan)</option>
+                <option value="tarih-artan">Tarih (Artan)</option>
+            </select>
+            <button onclick="filtrele()">Filtrele</button>
+        </div>
+        <div id="kaydedilenNotlar">
+            <h2>Kaydedilen Notlar</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
